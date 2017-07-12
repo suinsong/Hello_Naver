@@ -1,0 +1,11 @@
+# 주석입니다
+
+# Naver Secret 파일 업로드 금지
+naver_secret.js
+
+
+# module 업로드 금지
+node_modules/
+.env
+.metadata/
+
