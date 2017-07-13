@@ -1,0 +1,24 @@
+
+<style>
+section.bookBox {
+	height: 300px;
+}
+</style>
+
+
+<section class='w3-row'>
+	<% books.forEach(function(book){ %>
+	<section
+		class='w3-col l2 m2 s2 w3-light-grey w3-margin w3-padding-16 w3-center bookBox'>
+		<a href='<%- book.link %>' target='_naver'> <img
+			src='<%- book.image %>' alt='이미지' class='w3-round'>
+		</a>
+		<div class='caption'><%- book.title %></div>
+
+	</section>
+
+
+	<% }) %>
+
+
+</section>

@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head><% include header.ejs %>
+</head>
+<script src='/js/search.js'></script>
+<body class='w3-light-grey w3-padding-16''>
+
+
+	<header class='w3-margin w3-container w3-margin w3-green'>
+		<h3 class='w3-padding-16'>네이버 API실습</h3>
+	</header>
+
+
+	<article class='w3-container w3-margin w3-padding w3-white'>
+		<section class='w3-margin w3-col m2 l2 s2'>
+			<input type='radio' id='searchItem' name='searchItem' value='book'
+				class='w3-radio' checked> <label>도서검색</label> <input type='radio'
+				id='searchItem' name='searchItem' value='movie' class='w3-radio'>
+			<label>영화검색</label>
+			<input type='radio' id='searchItem' name='searchItem' value='news'
+				class='w3-radio' > <label>뉴스검색</label>
+		</section>
+
+		<section class='w3-margin w3-col l5 m5 s5'>
+
+			<input type='text' id='searchBook' name='searchBook'
+				placeholder='검색어를 입력하신 후 Enter를 누르세요'
+				class='w3-input w3-border w3-hoverable-light-grey'>
+
+		</section>
+		
+		
+		
+
+		<section id='resultBody' class='w3-margin'></section>
+
+	</article>
+
+</body>
 </html>
